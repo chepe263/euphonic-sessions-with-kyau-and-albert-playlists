@@ -1,0 +1,16 @@
+
+Playlist regex
+
+pattern
+^(\d+)\s(.*)(\s-\s)(.*?)(?= \(| \[)
+
+replace
+$1. $2$3"$4"
+
+pattern
+[TRACK OF THE MONTH] [CLASSIC OF THE MONTH]
+(.*\n)(.*)(\s+)(\[(TRACK|CLASSIC) OF THE MONTH\])
+
+
+replace
+$1\n$4\n$2\n
